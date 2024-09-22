@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>B10A5-DOM</title>
+
+    <!-- DaisyUi & Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
 </head>
-<body>
-    
+<body class="lexend-font">
+    <header class="bg-[#F9F7F3] pt-6 pb-[80px]">
+        <nav class="flex justify-between items-center w-[80%] mx-auto">
+            <button class="btn bg-[#B4F461] px-[32px] py-[12px] text-[20px] font-[600] text-[#111111]">Blog</button>
+            <div class="flex items-center gap-2">
+                <img src="./images/logo.png" alt="">
+                <h1 class="text-[20px] font-[600] text-[#111111]">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="./images/coin.png" alt="">
+                <h1 class="text-[20px] font-[500] text-[#111111B3]"><span>5500</span> BDT</h1>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="mx-auto w-[80%] flex flex-col items-center my-[80px]">
+            <div class="flex items-center gap-5">
+                <button class="btn">Donation</button>
+                <button class="btn">History</button>
+            </div>
+            <div class="border-2 border-[#1111111a] rounded-[16px] flex items-center justify-between m-8 p-8 gap-8">
+                <img src="./images/noakhali.png" alt="">
+                <div>
+                    <button class="btn flex bg-[#1111110D]">
+                        <img src="./images/coin.png" alt="">
+                        <span>0</span>
+                        BDT
+                    </button>
+                    <h1 class="text-[#111111] text-[20px] font-[700] my-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-[#111111B3] text-[16px] font-[300] mb-6">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input class="w-full rounded-[8px] p-[18px]" type="number" placeholder="Write Donation Amount">
+                    <button class="btn bg-[#B4F461] w-full rounded-[8px] py-[16px] mt-4 text-[#111111] text-[20px] font-[600]">Donate Now</button>
+                </div>
+            </div>
+            <div class="border-2 border-[#1111111a] rounded-[16px] flex items-center justify-between m-8 p-8 gap-8">
+                <img src="./images/feni.png" alt="">
+                <div>
+                    <button class="btn flex bg-[#1111110D]">
+                        <img src="./images/coin.png" alt="">
+                        <span>0</span>
+                        BDT
+                    </button>
+                    <h1 class="text-[#111111] text-[20px] font-[700] my-4">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="text-[#111111B3] text-[16px] font-[300] mb-6">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <input class="w-full rounded-[8px] p-[18px]" type="number" placeholder="Write Donation Amount">
+                    <button class="btn bg-[#B4F461] w-full rounded-[8px] py-[16px] mt-4 text-[#111111] text-[20px] font-[600]">Donate Now</button>
+                </div>
+            </div>
+            <div class="border-2 border-[#1111111a] rounded-[16px] flex items-center justify-between m-8 p-8 gap-8">
+                <img src="./images/quota-protest.png" alt="">
+                <div>
+                    <button class="btn flex bg-[#1111110D]">
+                        <img src="./images/coin.png" alt="">
+                        <span>0</span>
+                        BDT
+                    </button>
+                    <h1 class="text-[#111111] text-[20px] font-[700] my-4">Aid for Injured in the Quota Movement</h1>
+                    <p class="text-[#111111B3] text-[16px] font-[300] mb-6">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <input class="w-full rounded-[8px] p-[18px]" type="number" placeholder="Write Donation Amount">
+                    <button class="btn bg-[#B4F461] w-full rounded-[8px] py-[16px] mt-4 text-[#111111] text-[20px] font-[600]">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./JavaScript/app.js"></script>
 </body>
 </html>
