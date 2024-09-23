@@ -37,6 +37,8 @@ function displayDonationSection() {
                     time: timestamp
                 });
 
+                showModal(donationAmount, cause);
+
                 inputField.value = '';
             } else {
                 alert("Insufficient coins or invalid donation amount!");
@@ -55,6 +57,21 @@ function updateCardCoinValues() {
         coinButton.innerText = donationAmounts[index];
     });
 }
+
+function showModal(donationAmount, cause) {
+    const modal = document.getElementById('donationModal');
+    const message = document.getElementById('donationMessage');
+    modal.classList.remove('hidden');
+}
+
+function hideModal() {
+    const modal = document.getElementById('donationModal');
+    modal.classList.add('hidden');
+}
+
+document.getElementById('closeModal').addEventListener('click', hideModal);
+
+
 
 function displayHistory() {
     const section = document.querySelector('section');
