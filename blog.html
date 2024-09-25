@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog | B10A5-DOM</title>
+
+    <!-- DaisyUi & Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+ 
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="lexend-font">
+    <header class="bg-[#fff3d6] py-8">
+        <nav class="flex lg:flex-row flex-col gap-2 lg:justify-between items-center w-[95%] mx-auto">
+            <a href="./index.html"><button class="btn bg-[#B4F461] px-[32px] py-[12px] text-[20px] font-[600] text-[#111111]">Home</button></a>
+            <div class="flex items-center gap-2">
+                <img src="./images/logo.png" alt="">
+                <h1 class="text-[20px] font-[600] text-[#111111]">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="./images/coin.png" alt="">
+                <h1 class="text-[20px] font-[500] text-[#111111B3]"><span id="tcoin">5500</span> BDT</h1>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="w-[90%] mx-auto flex items-center gap-3 mt-5">
+            <h1 class="text-[28px] font-bold">Important FAQ</h1>
+            <p class="text-[28px] font-bold">?</p>
+        </div>
+        <!-- Card 1 -->
+        <div class="w-[90%] mx-auto bg-white shadow-md rounded-lg p-4 mt-10">
+            <div class="flex justify-between items-center">
+                <h1 class="text-lg font-bold">What is the Document Object Model (DOM)?</h1>
+                <button class="toggleButton">
+                    <svg xmlns="https://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300 arrowIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+            </div>
+            <div class="mt-2 text-wrap hidden answer">
+                <p>vvhhghgjhjjgfhggfjghghgggggggggggggggggggggggggggggggggggggggggg</p>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="w-[90%] mx-auto bg-white shadow-md rounded-lg p-4 mt-10">
+            <div class="flex justify-between items-center">
+                <h1 class="text-lg font-bold">What is the Document Object Model (DOM)?</h1>
+                <button class="toggleButton">
+                    <svg xmlns="https://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300 arrowIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+            </div>
+            <div class="mt-2 text-wrap hidden answer">
+                <p>vvhhghgjhjjgfhggfjghghgggggggggggggggggggggggggggggggggggggggggg</p>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="w-[90%] mx-auto bg-white shadow-md rounded-lg p-4 mt-10">
+            <div class="flex justify-between items-center">
+                <h1 class="text-lg font-bold">What is the Document Object Model (DOM)?</h1>
+                <button class="toggleButton">
+                    <svg xmlns="https://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300 arrowIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+            </div>
+            <div class="mt-2 text-wrap hidden answer">
+                <p>vvhhghgjhjjgfhggfjghghgggggggggggggggggggggggggggggggggggggggggg</p>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="w-[90%] mx-auto bg-white shadow-md rounded-lg p-4 mt-10">
+            <div class="flex justify-between items-center">
+                <h1 class="text-lg font-bold">What is the Document Object Model (DOM)?</h1>
+                <button class="toggleButton">
+                    <svg xmlns="https://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300 arrowIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+            </div>
+            <div class="mt-2 text-wrap hidden answer">
+                <p>vvhhghgjhjjgfhggfjghghgggggggggggggggggggggggggggggggggggggggggg</p>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="w-[90%] mx-auto bg-white shadow-md rounded-lg p-4 mt-10">
+            <div class="flex justify-between items-center">
+                <h1 class="text-lg font-bold">What is the Document Object Model (DOM)?</h1>
+                <button class="toggleButton">
+                    <svg xmlns="https://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300 arrowIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+            </div>
+            <div class="mt-2 text-wrap hidden answer">
+                <p>vvhhghgjhjjgfhggfjghghgggggggggggggggggggggggggggggggggggggggggg</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggleButtons = document.querySelectorAll('.toggleButton');
+        const answers = document.querySelectorAll('.answer');
+        const arrowIcons = document.querySelectorAll('.arrowIcon');
+
+        toggleButtons.forEach((button, index) =>{
+            button.addEventListener("click", function(){
+
+                answers[index].classList.toggle("hidden");
+
+                if(answers[index].classList.contains("hidden")){
+                    arrowIcons[index].innerHTML = `<path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M19 9l-7 7-7-7" />`;
+                }
+                else {
+                    arrowIcons[index].innerHTML = `<path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M19 15l-7-7-7 7" />`;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
